@@ -17,21 +17,26 @@ Este proyecto demuestra un pipeline ETL para procesar datos de ventas de una tie
    cd etl-sales-analysis
 
 2. Crea un entorno virtual:
-    python -m venv venv
-    source venv/bin/activate  # En Windows: venv\Scripts\activate
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
 
 3. Instala las dependencias:
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. Crea los archivos de datos:
-    sales_data.csv
-    customers_data.json
+   ```bash
+   sales_data.csv
+   customers_data.json
 
 5. Ejecuta el script ETL:
-    python etl_pipeline.py
+   ```bash
+   python etl_pipeline.py
 
 6. Ejecuta el script check_data para comprobaciones:
-    python check_data.py
+   ```bash
+   python check_data.py
 
 ## Estructura del proyecto
 etl_pipeline.py: Script principal que ejecuta el proceso ETL. Extrae datos desde archivos CSV y JSON, realiza transformaciones y carga los datos en una base de datos SQLite.
